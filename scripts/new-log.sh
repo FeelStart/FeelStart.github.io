@@ -24,11 +24,3 @@ EOF
 echo "已创建：hugo/content/${FILE_PATH}"
 echo ""
 
-# 打开编辑器
-if [[ -n "$EDITOR" ]]; then
-  "$EDITOR" "$FULL_PATH"
-elif command -v code &>/dev/null; then
-  code "$FULL_PATH"
-elif command -v open &>/dev/null; then
-  open "$FULL_PATH"
-fi
